@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Devarshee Thopte - software engineer building agentic AI systems, retrieval infrastructure, distributed training, and reliable cloud backends."
+    />
+    <title>Devarshee Thopte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ── floating pill nav ───────────────────────────────── -->
+    <div class="nav-shell">
+      <nav class="navbar" aria-label="Primary">
+        <a class="brand" href="#top">
+          Devarshee Thopte
+          <svg class="brand-mark" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M2 2 L14 14 M14 2 L2 14" />
+          </svg>
+        </a>
+        <div class="nav-links">
+          <a href="#work">Work</a>
+          <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a class="nav-cta" href="mailto:ddthopte@uw.edu">Email</a>
+      </nav>
+    </div>
+
+    <main id="top">
+      <!-- ── hero (pinned) ─────────────────────────────────── -->
+      <div class="pin-host" data-pin-host>
+        <section class="hero" data-pin>
+          <div class="hero-media" data-hero-media aria-hidden="true">
+            <div class="bloom"></div>
+            <div class="beam beam-a"></div>
+            <div class="beam beam-b"></div>
+            <div class="silhouette"></div>
+            <div class="grain"></div>
+            <div class="vignette"></div>
+          </div>
+
+          <div class="container hero-inner">
+            <div class="hero-copy" data-hero-copy>
+              <span class="monocaps chip">Vision</span>
+              <h1>Building agentic AI<br />systems that hold up.</h1>
+            </div>
+            <p class="hero-foot" data-hero-copy>
+              I'm a software engineer working on retrieval, agents, and the<br />
+              infrastructure that keeps them reliable in production.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!-- ── manifesto: scroll-driven text reveal ──────────── -->
+      <section class="overview">
+        <div class="container">
+          <div class="layout-grid">
+            <div class="col-label">
+              <span class="monocaps chip">What I work on</span>
+            </div>
+            <div class="col-body">
+              <div class="reveal-stack" data-reveal-text>
+                <p>
+                  I build the unglamorous infrastructure that makes AI usable —
+                  retrieval that finds the right document, agent pipelines that
+                  recover from their own mistakes, and distributed training that
+                  fits in the memory you actually have.
+                </p>
+                <p>
+                  Most AI work fails somewhere between the demo and production. A
+                  model that trains on one GPU stalls across three. A pipeline
+                  that handles a thousand rows collapses at twelve million. An
+                  agent that looks brilliant in a transcript quietly hallucinates
+                  on the ninth call. That gap is where I spend my time.
+                </p>
+                <p>
+                  So I refuse to ship anything I can't grade. Every system I
+                  build comes with its own evaluation harness — benchmark
+                  questions, retrieval scores, deterministic verification — and
+                  its own instrumentation, because a system you cannot measure is
+                  a system you cannot trust.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── experience ────────────────────────────────────── -->
+      <section class="block" id="work">
+        <div class="container">
+          <div class="layout-grid">
+            <div class="col-label">
+              <span class="monocaps chip">Experience</span>
+            </div>
+            <div class="col-body">
+              <div class="rows">
+                <article class="row" data-inview>
+                  <div class="row-meta monocaps">May 2026 — Present</div>
+                  <div class="row-body">
+                    <h3>AI Engineer Student Assistant</h3>
+                    <p class="org">
+                      University of Washington, Responsibility in AI Systems &amp;
+                      Experiences Lab · Seattle, WA
+                    </p>
+                    <ul>
+                      <li>
+                        Improved query resolution accuracy 26% over ChatGPT by
+                        architecting a GraphRAG system with hybrid retrieval
+                        across 9,000 legal documents for the City of Seattle.
+                      </li>
+                      <li>
+                        Built a knowledge graph through OCR ingestion to traverse
+                        cross-agency documents, with guardrails that eliminate
+                        hallucination.
+                      </li>
+                      <li>
+                        Evaluated with LLM-as-a-Judge over 271 benchmark
+                        questions and scored retrieval quality with NDCG@5.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="row" data-inview>
+                  <div class="row-meta monocaps">Mar 2025 — Aug 2025</div>
+                  <div class="row-body">
+                    <h3>
+                      AI Software Engineer Intern
+                      <a
+                        class="row-link"
+                        href="https://youtu.be/V5nqUnWtU3c"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Demo</a
+                      >
+                    </h3>
+                    <p class="org">
+                      Motilal Oswal Financial Services · Mumbai, IND
+                    </p>
+                    <ul>
+                      <li>
+                        Improved lip-audio sync from a 3.3 to a 6.0 SyncNet score
+                        by fine-tuning LatentSync on 225 hours of proprietary
+                        video via SageMaker, then shipped the multilingual
+                        digital twin pipeline.
+                      </li>
+                      <li>
+                        Cut GPU memory 40% (20GB to 12GB) and tripled throughput
+                        (8 to 24 videos/hr) with DeepSpeed ZeRO-2 and PyTorch DDP
+                        multi-node data parallelism.
+                      </li>
+                      <li>
+                        Extended inference capacity 4x (30s to 2min) through
+                        frame batching, served on AWS Lambda.
+                      </li>
+                      <li>
+                        Saved 30–45 minutes per release by containerizing the ML
+                        infrastructure with Docker and automating GitHub Actions.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="row" data-inview>
+                  <div class="row-meta monocaps">Mar 2024 — May 2024</div>
+                  <div class="row-body">
+                    <h3>Data Engineer Intern</h3>
+                    <p class="org">
+                      Google Research, SimPPL Fellowship · New York, USA
+                    </p>
+                    <ul>
+                      <li>
+                        Migrated 12M GA4 events into partitioned BigQuery tables
+                        for the Gothamist newsroom, cutting backfill memory 60%
+                        and runtime 40% with a generator and chunking
+                        architecture on GCP Cloud Functions.
+                      </li>
+                      <li>
+                        Achieved zero data loss across a 365-day backfill using a
+                        three-layer reliability system: Pub/Sub orchestration, a
+                        dead-letter queue, and GA4-to-BigQuery reconciliation.
+                      </li>
+                      <li>
+                        Surfaced 30–45% engagement drops across news categories
+                        through Plotly dashboards, informing content targeting.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="row" data-inview>
+                  <div class="row-meta monocaps">Jul 2023 — Nov 2023</div>
+                  <div class="row-body">
+                    <h3>Software Development Engineer Intern</h3>
+                    <p class="org">ATA Group of Companies · Florida, USA</p>
+                    <ul>
+                      <li>
+                        Reduced geospatial query latency 99% (20s to 200ms) and
+                        delivered real-time vegetation and weather insights to
+                        30+ farmers with a FastAPI backend over PostGIS spatial
+                        queries and Redis caching for NASA and MODIS data.
+                      </li>
+                      <li>
+                        Engineered API resilience with a circuit breaker and
+                        leaky-bucket rate limiter, monitored through Prometheus
+                        and Grafana.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── pinned numbered sequence ──────────────────────── -->
+      <div class="pin-host seq-host" id="projects" data-seq-host>
+        <section class="seq" data-pin>
+          <div class="container">
+            <div class="layout-grid seq-grid">
+              <div class="col-label">
+                <span class="monocaps chip">Selected projects</span>
+              </div>
+              <div class="col-body">
+                <div class="seq-counter monocaps" aria-hidden="true">
+                  <div class="seq-digits" data-seq-digits>
+                    <span>01</span><span>02</span><span>03</span>
+                  </div>
+                  <span class="seq-total">/ 03</span>
+                </div>
+
+                <div class="seq-panels">
+                  <article class="seq-panel is-active" data-seq-panel>
+                    <p class="monocaps kicker">
+                      LangGraph · FastAPI · PostgreSQL · Claude API
+                    </p>
+                    <h2>Autonomous incident responder</h2>
+                    <p class="seq-text">
+                      Detects live SLO breaches and returns a root-cause analysis
+                      through a LangGraph pipeline behind a FastAPI webhook, with
+                      a PostgreSQL-checkpointed human-in-the-loop approval gate.
+                      A heuristic pre-filter on recency and stack trace narrows
+                      the search before LLM diff analysis, and the fix generator
+                      verifies itself by running patches against self-generated
+                      failing tests in a sandboxed pytest harness.
+                    </p>
+                    <div class="metrics">
+                      <span>Breach detected in 10s</span>
+                      <span>RCA in 30s</span>
+                      <span>100% culprit-commit accuracy</span>
+                      <span>10/10 deterministic verification</span>
+                    </div>
+                  </article>
+
+                  <article class="seq-panel" data-seq-panel>
+                    <p class="monocaps kicker">
+                      Qwen3-4B · vLLM · QLoRA · HuggingFace TRL
+                    </p>
+                    <h2>Data science notebook agent</h2>
+                    <p class="seq-text">
+                      A Plan, Generate, Execute, Debug pipeline that wires
+                      Qwen3-4B into LangGraph and serves it through vLLM, with
+                      Pydantic-structured notebook outputs. An Apptainer sandbox
+                      gives the agent a bounded retry loop that reads its own
+                      stderr tracebacks. Fine-tuned with QLoRA on an H200 and
+                      benchmarked base against fine-tuned.
+                    </p>
+                    <div class="metrics">
+                      <span>DSCodeBench</span>
+                      <span>DS-1000</span>
+                      <span>DABstep</span>
+                    </div>
+                  </article>
+
+                  <article class="seq-panel" data-seq-panel>
+                    <p class="monocaps kicker">
+                      AWS AgentCore · Strands · FastMCP · Cognito
+                    </p>
+                    <h2>Travel planning agent</h2>
+                    <p class="seq-text">
+                      A Strands agent deployed across three AgentCore Runtime
+                      endpoints and two FastMCP servers, unified behind an
+                      AgentCore Gateway with OAuth2 through Amazon Cognito.
+                      AgentCore Memory carries context across sessions, which cut
+                      both redundant tool calls and cold-start latency.
+                    </p>
+                    <div class="metrics">
+                      <span>10 req/s at 20 concurrent</span>
+                      <span>96% success</span>
+                      <span>63% fewer tool calls</span>
+                      <span>3s median · 8s p95</span>
+                    </div>
+                  </article>
+                </div>
+
+                <a
+                  class="text-link"
+                  href="https://github.com/devarshee-13"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ── stack marquee ─────────────────────────────────── -->
+      <section class="marquee-section">
+        <div class="container">
+          <span class="monocaps chip">Technical range</span>
+        </div>
+        <div class="marquee" aria-label="Technologies">
+          <div class="marquee-track" data-marquee>
+            <span>Python</span><span>C</span><span>Java</span
+            ><span>TypeScript</span><span>SQL</span><span>Bash</span
+            ><span>FastAPI</span><span>React</span><span>Node.js</span
+            ><span>PostgreSQL</span><span>Redis</span><span>BigQuery</span
+            ><span>Prometheus</span><span>Docker</span><span>Kubernetes</span
+            ><span>Git</span><span>AWS</span><span>GCP</span><span>Azure</span
+            ><span>RAG</span><span>LangChain</span><span>LangGraph</span
+            ><span>MCP</span><span>QLoRA</span><span>vLLM</span
+            ><span>HuggingFace</span><span>Claude Code</span><span>Cursor</span
+            ><span>PyTorch</span><span>TensorFlow</span><span>Sklearn</span
+            ><span>Pandas</span><span>NumPy</span><span>NLTK</span
+            ><span>Graph Neural Networks</span><span>Distributed Training</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── research ──────────────────────────────────────── -->
+      <section class="block" id="research">
+        <div class="container">
+          <div class="section-top">
+            <span class="monocaps chip">Research</span>
+            <a
+              class="text-link"
+              href="https://www.linkedin.com/in/ddthopte/"
+              target="_blank"
+              rel="noreferrer"
+              >View all</a
+            >
+          </div>
+          <div class="card-grid">
+            <a
+              class="card"
+              data-inview
+              href="https://link.springer.com/chapter/10.1007/978-3-032-10756-5_13"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div class="card-thumb thumb-a"></div>
+              <h3>Federated learning for ethical issues in AI</h3>
+              <p class="monocaps card-meta">Springer · 2025</p>
+            </a>
+            <a
+              class="card"
+              data-inview
+              href="https://ieeexplore.ieee.org/abstract/document/10775112/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div class="card-thumb thumb-b"></div>
+              <h3>Spatiotemporal ensemble modeling for urban taxi travel time</h3>
+              <p class="monocaps card-meta">JoCAA Vol. 32 · 2024</p>
+            </a>
+            <a
+              class="card"
+              data-inview
+              href="https://link.springer.com/chapter/10.1007/978-981-96-1687-9_24"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div class="card-thumb thumb-c"></div>
+              <h3>Getaway Guide — ML-powered travel itinerary curation</h3>
+              <p class="monocaps card-meta">Springer · 2024</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── education / availability ──────────────────────── -->
+      <section class="block" id="contact">
+        <div class="container">
+          <div class="layout-grid">
+            <div class="col-label">
+              <span class="monocaps chip">Education</span>
+            </div>
+            <div class="col-body">
+              <div class="avail" data-inview>
+                <span class="monocaps status"
+                  ><i class="dot"></i>Open to roles</span
+                >
+                <h2>
+                  MS in Information Management at the University of Washington,
+                  GPA 3.97.
+                </h2>
+                <p class="lede">
+                  Graduating May 2027, and working in the university's
+                  Responsibility in AI Systems &amp; Experiences Lab while I
+                  study. Previously a Bachelor of Engineering in Computer Science
+                  with Honors in Intelligent Computing from the University of
+                  Mumbai, GPA 3.8. Best fit for software engineering, AI
+                  engineering, data platform, and backend roles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CTA ───────────────────────────────────────────── -->
+      <section class="cta">
+        <div class="container cta-inner" data-inview>
+          <h2>Let's build something useful.</h2>
+          <a class="button" href="mailto:ddthopte@uw.edu">Get in touch</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="monocaps">© 2026 Devarshee Thopte</span>
+        <div class="footer-links monocaps">
+          <a href="mailto:ddthopte@uw.edu">Email</a>
+          <a
+            href="https://www.linkedin.com/in/ddthopte/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/devarshee-13"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub</a
+          >
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
