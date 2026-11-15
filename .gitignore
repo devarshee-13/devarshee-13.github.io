@@ -1,6 +1,0 @@
-.vercel
-.claude
-
-# never publish the resume or any other PDF
-*.pdf
-assets/
